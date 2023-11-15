@@ -1,3 +1,4 @@
+//entrega 1
 const fs = require("fs"); //IMPORTAMOS LA LIBRERIA
 //let data = "Hola mundo";
 class ProductManager {
@@ -74,13 +75,13 @@ class ProductManager {
       products[indiceProducto] = productoActualizado;
       fs.writeFileSync(this.path, JSON.stringify(products, null, 2));
     }else{
-      console.log("error: no se enconcontro producto con el id especifico");
+      console.log("error: no se contro producto con el id especifico");
     }
   };
 
   };
 
-  
+
 //-------------------------
 const productManager = new ProductManager();
 productManager.addProduct(
@@ -123,3 +124,5 @@ productManager.updateProduct(3,
   }
  
 );
+
+export default ProductManager;

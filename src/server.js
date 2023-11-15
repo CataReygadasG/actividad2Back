@@ -1,5 +1,5 @@
 import  express from "express";
-import productManager from '../productManager.js'
+import productManager from './productManager.js'
 const app = express();
 app.get('/products', (req, res)=>{
     const limit = req.query.limit;
